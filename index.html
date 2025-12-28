@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arnav & Shreya | Wedding</title>
+
+<style>
+:root {
+  --red: #8b1e1e;
+  --gold: #c9a24d;
+  --beige: #f6efe6;
+  --black: #111;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, serif;
+  background: var(--beige);
+  color: var(--black);
+}
+
+/* GANESH TOP BAR */
+.ganesh-bar {
+  background: var(--beige);
+  text-align: center;
+  padding: 10px 8px;
+  font-size: 0.85rem;
+  color: var(--black);
+  border-bottom: 1px solid #e6dccf;
+}
+
+.ganesh-bar img {
+  height: 28px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("hero.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+.hero-text {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+/* BLUR REVEAL */
+.blur-section {
+  background: url("hero.jpg") center/cover fixed no-repeat;
+  position: relative;
+  padding: 90px 20px;
+}
+
+.blur-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(246,239,230,0.9);
+}
+
+.blur-content {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.blur-content h2 {
+  color: var(--red);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 20px;
+  max-width: 750px;
+  margin: auto;
+}
+
+section h3 {
+  text-align: center;
+  color: var(--red);
+  font-size: 1.9rem;
+  margin-bottom: 35px;
+}
+
+/* EVENT CARDS */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 22px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.card h4 {
+  color: var(--gold);
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 14px 30px;
+  background: var(--red);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 0.95rem;
+}
+
+/* FOOTER */
+footer {
+  background: var(--black);
+  color: #ccc;
+  text-align: center;
+  padding: 45px 15px;
+  font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- GANESH LINE -->
+<div class="ganesh-bar">
+  <img src="ganesh.jpg" alt="Ganesh Ji">
+  Vakratunda Mahakaya Suryakoti Samaprabha
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>Arnav & Shreya</h1>
+    <p>10 February 2026 · Ghaziabad</p>
+  </div>
+</div>
+
+<!-- WELCOME -->
+<div class="blur-section">
+  <div class="blur-content">
+    <h2>Welcome to the Wedding Celebration</h2>
+    <p>of Arnav & Shreya</p>
+  </div>
+</div>
+
+<!-- EVENTS -->
+<section>
+  <h3>Wedding Celebrations</h3>
+
+  <div class="card">
+    <h4>Mehendi</h4>
+    <p>7 February 2026<br><em>Timings to be announced</em></p>
+  </div>
+
+  <div class="card">
+    <h4>Bhaat & Kirtan</h4>
+    <p>8 February 2026<br><em>Timings to be announced</em></p>
+  </div>
+
+  <div class="card">
+    <h4>Sangeet & Engagement</h4>
+    <p>9 February 2026<br><em>Timings to be announced</em></p>
+  </div>
+
+  <div class="card">
+    <h4>Haldi · Wedding · Reception</h4>
+    <p>10 February 2026<br><em>Timings to be announced</em></p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <h3>Moments</h3>
+  <div class="gallery">
+    <img src="gallery1.jpg">
+    <img src="gallery2.jpg">
+    <img src="gallery3.jpg">
+    <img src="gallery4.jpg">
+    <img src="gallery5.jpg">
+  </div>
+</section>
+
+<!-- VENUE -->
+<section>
+  <h3>Venue</h3>
+  <div class="card">
+    <p>Venue details will be shared soon</p>
+    <a class="btn" href="#">Open in Google Maps</a>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section>
+  <h3>RSVP</h3>
+
+  <div class="card">
+    <h4>Bride Side</h4>
+    <a class="btn" href="tel:XXXXXXXXXX">Call</a>
+  </div>
+
+  <div class="card">
+    <h4>Groom Side</h4>
+    <a class="btn" href="tel:XXXXXXXXXX">Call</a>
+  </div>
+</section>
+
+<footer>
+  With love & blessings<br>
+  Arnav & Shreya
+</footer>
+
+</body>
+</html>
