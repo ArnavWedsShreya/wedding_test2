@@ -1,260 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arnav & Shreya | Wedding</title>
-
-<style>
-:root {
-  --red: #8b1e1e;
-  --gold: #c9a24d;
-  --beige: #f6efe6;
-  --black: #111;
-}
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, serif;
-  background: var(--beige);
-  color: var(--black);
-}
-
-/* GANESH TOP BAR */
-.ganesh-bar {
-  background: var(--beige);
-  text-align: center;
-  padding: 10px 8px;
-  font-size: 0.85rem;
-  color: var(--black);
-  border-bottom: 1px solid #e6dccf;
-}
-
-.ganesh-bar img {
-  height: 28px;
-  vertical-align: middle;
-  margin-right: 6px;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  background: url("hero.jpg") center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35);
-}
-
-.hero-text {
-  position: relative;
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-}
-
-.hero-text h1 {
-  font-size: 2.8rem;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
-.hero-text p {
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-}
-
-/* BLUR REVEAL */
-.blur-section {
-  background: url("hero.jpg") center/cover fixed no-repeat;
-  position: relative;
-  padding: 90px 20px;
-}
-
-.blur-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  backdrop-filter: blur(10px);
-  background: rgba(246,239,230,0.9);
-}
-
-.blur-content {
-  position: relative;
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-
-.blur-content h2 {
-  color: var(--red);
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-/* SECTIONS */
-section {
-  padding: 70px 20px;
-  max-width: 750px;
-  margin: auto;
-}
-
-section h3 {
-  text-align: center;
-  color: var(--red);
-  font-size: 1.9rem;
-  margin-bottom: 35px;
-}
-
-/* EVENT CARDS */
-.card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 22px;
-  text-align: center;
-  border: 1px solid #eee;
-}
-
-.card h4 {
-  color: var(--gold);
-  font-size: 1.25rem;
-  margin-bottom: 6px;
-}
-
-/* GALLERY */
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 18px;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 14px 30px;
-  background: var(--red);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 40px;
-  font-size: 0.95rem;
-}
-
-/* FOOTER */
-footer {
-  background: var(--black);
-  color: #ccc;
-  text-align: center;
-  padding: 45px 15px;
-  font-size: 0.9rem;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya & Raj - Rajasthani Wedding</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #fffaf0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://weddingsutra.com/images/wedding-images/blog-images/hannah-vidhur/hannah-vidhur-01.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .border-pattern {
+            border: 10px solid transparent;
+            border-image: url('https://www.shutterstock.com/image-vector/botanical-floral-seamless-abstract-geometric-260nw-2351705317.jpg') 30 round;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+        h2 {
+            font-size: 2.5rem;
+            color: #b71c1c;
+            text-align: center;
+            margin-top: 40px;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .blessings {
+            background-color: #ffebee;
+            text-align: center;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+        .couple-img {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .events {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .event-card {
+            background: white;
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #b71c1c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .events { flex-direction: column; align-items: center; }
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- GANESH LINE -->
-<div class="ganesh-bar">
-  <img src="ganesh.jpg" alt="Ganesh Ji">
-  Vakratunda Mahakaya Suryakoti Samaprabha
-</div>
+    <header>
+        <div class="border-pattern">
+            <h1>Priya Weds Raj</h1>
+            <p style="font-size:2rem;">We are getting married!</p>
+            <p style="font-size:1.5rem;">15th February 2026 | Udaipur, Rajasthan</p>
+        </div>
+    </header>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-text">
-    <h1>Arnav & Shreya</h1>
-    <p>10 February 2026 · Ghaziabad</p>
-  </div>
-</div>
+    <section class="blessings">
+        <h2>आशीर्वाद / Blessings</h2>
+        <p>With the blessings of our parents and elders, we invite you to celebrate our union in the royal traditions of Rajasthan.</p>
+        <p>May Lord Ganesha and Goddess Lakshmi bless our new journey together.</p>
+        <p>पधारो सा! We cordially invite you and your family to grace the occasion with your presence.</p>
+    </section>
 
-<!-- WELCOME -->
-<div class="blur-section">
-  <div class="blur-content">
-    <h2>Welcome to the Wedding Celebration</h2>
-    <p>of Arnav & Shreya</p>
-  </div>
-</div>
+    <section>
+        <h2>Our Story</h2>
+        <p>Priya and Raj met in Jaipur during a family festival. What started as a conversation over traditional Rajasthani sweets turned into a beautiful love story. Now, we are ready to begin our married life surrounded by the colors and grandeur of Rajasthan.</p>
+        <img src="https://c8.alamy.com/comp/F2TWE3/2-indian-rajasthani-villager-married-couple-romance-F2TWE3.jpg" alt="Rajasthani couple in traditional attire" class="couple-img">
+    </section>
 
-<!-- EVENTS -->
-<section>
-  <h3>Wedding Celebrations</h3>
+    <section style="background-color:#fff3e0;">
+        <h2>Wedding Events</h2>
+        <div class="events">
+            <div class="event-card">
+                <h3>Mehndi Ceremony</h3>
+                <p>13th February 2026</p>
+                <p>6:00 PM onwards</p>
+                <p>Palace Gardens, Udaipur</p>
+            </div>
+            <div class="event-card">
+                <h3>Sangeet & Cocktail</h3>
+                <p>14th February 2026</p>
+                <p>7:00 PM onwards</p>
+                <p>Lake Palace Terrace</p>
+            </div>
+            <div class="event-card">
+                <h3>Wedding Ceremony</h3>
+                <p>15th February 2026</p>
+                <p>4:00 PM onwards</p>
+                <p>Traditional Mandap, City Palace</p>
+                <img src="https://www.haringphotography.com/wp-content/uploads/2016/11/indian-wedding-photographers-florida-4-1800x1200.jpg" alt="Traditional Rajasthani Mandap" style="width:100%; margin-top:10px; border-radius:10px;">
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
-    <h4>Mehendi</h4>
-    <p>7 February 2026<br><em>Timings to be announced</em></p>
-  </div>
+    <section>
+        <h2>Venue & Directions</h2>
+        <p>Main events at the majestic City Palace, Udaipur.</p>
+        <p>We look forward to welcoming you to the land of kings!</p>
+    </section>
 
-  <div class="card">
-    <h4>Bhaat & Kirtan</h4>
-    <p>8 February 2026<br><em>Timings to be announced</em></p>
-  </div>
-
-  <div class="card">
-    <h4>Sangeet & Engagement</h4>
-    <p>9 February 2026<br><em>Timings to be announced</em></p>
-  </div>
-
-  <div class="card">
-    <h4>Haldi · Wedding · Reception</h4>
-    <p>10 February 2026<br><em>Timings to be announced</em></p>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section>
-  <h3>Moments</h3>
-  <div class="gallery">
-    <img src="gallery1.jpg">
-    <img src="gallery2.jpg">
-    <img src="gallery3.jpg">
-    <img src="gallery4.jpg">
-    <img src="gallery5.jpg">
-  </div>
-</section>
-
-<!-- VENUE -->
-<section>
-  <h3>Venue</h3>
-  <div class="card">
-    <p>Venue details will be shared soon</p>
-    <a class="btn" href="#">Open in Google Maps</a>
-  </div>
-</section>
-
-<!-- RSVP -->
-<section>
-  <h3>RSVP</h3>
-
-  <div class="card">
-    <h4>Bride Side</h4>
-    <a class="btn" href="tel:XXXXXXXXXX">Call</a>
-  </div>
-
-  <div class="card">
-    <h4>Groom Side</h4>
-    <a class="btn" href="tel:XXXXXXXXXX">Call</a>
-  </div>
-</section>
-
-<footer>
-  With love & blessings<br>
-  Arnav & Shreya
-</footer>
+    <footer>
+        <p>With love, Priya & Raj</p>
+        <p>Contact: +91-1234567890 | priya.raj.wedding@example.com</p>
+    </footer>
 
 </body>
 </html>
